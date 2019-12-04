@@ -1,0 +1,25 @@
+{
+    "TEST_STACK": "st",
+    "TEST_APP": "azure",
+    "NATIVE_PLATFORM": "native",
+    "NATIVE_HOSTNAME": "localhost",
+    "NATIVE_PORT": 8084,
+    "TEST_AZURE_RG_LOCATION": "LOCATION",
+    "TEST_AZURE_RESOURCE_GROUP": "RESOURCE_GROUP_NAME",
+    "TEST_AZURE_SUBSCRIPTION_ID": "SUBSCRIPTION_ID",
+    "TEST_AZURE_SUBNETS": [{
+        "ADDRESS": "SUBNET_ID",
+        "NAME": "SUBNET_NAME"
+    }, {
+        "ADDRESS": "SUBNET_ID",
+        "NAME": "SUBNET_NAME"
+    }],
+    "TEST_AZURE_VNET": "VIRTUAL_NET_NAME",
+    "TEST_AZURE_OSTYPE": "linux",
+    "TEST_AZURE_BASEOS": "ubuntu-1604",
+    "TEST_AZURE_SKU": {
+        "NAME": "Standard_B1ms",
+        "TIER": "Standard",
+        "CAPACITY": 1
+    }
+}

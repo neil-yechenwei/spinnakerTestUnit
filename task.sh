@@ -1,0 +1,7 @@
+PYTHONPATH=.:~/software/spinnakerTestUnit/spinnaker_testing python ~/software/spinnakerTestUnit/test/azure_bake_and_deploy_ag.py --azure_storage_account_name=$STORAGE_NAME --spinnaker_azure_storage_account_key=$STORAGE_KEY --spinnaker_azure_account=my-azure-account  > ~/software/spinnakerTestUnit/bake_deploy_ag.txt 2>&1
+PYTHONPATH=.:~/software/spinnakerTestUnit/spinnaker_testing python ~/software/spinnakerTestUnit/test/azure_bake_and_RB_deploy_ag.py --azure_storage_account_name=$STORAGE_NAME --spinnaker_azure_storage_account_key=$STORAGE_KEY --spinnaker_azure_account=my-azure-account  > ~/software/spinnakerTestUnit/bake_RB_deploy_ag.txt 2>&1
+PYTHONPATH=.:~/software/spinnakerTestUnit/spinnaker_testing python ~/software/spinnakerTestUnit/test/azure_bake_and_deploy_lb.py --azure_storage_account_name=$STORAGE_NAME --spinnaker_azure_storage_account_key=$STORAGE_KEY --spinnaker_azure_account=my-azure-account  > ~/software/spinnakerTestUnit/bake_deploy_lb.txt 2>&1
+PYTHONPATH=.:~/software/spinnakerTestUnit/spinnaker_testing python ~/software/spinnakerTestUnit/test/azure_bake_and_RB_deploy_lb.py --azure_storage_account_name=$STORAGE_NAME --spinnaker_azure_storage_account_key=$STORAGE_KEY --spinnaker_azure_account=my-azure-account  > ~/software/spinnakerTestUnit/bake_RB_deploy_lb.txt 2>&1
+
+python ~/software/spinnakerTestUnit/uploadLog.py 2>> ~/daily-running.err
+python ~/software/spinnakerTestUnit/mail.py 2>> ~/daily-running.err
