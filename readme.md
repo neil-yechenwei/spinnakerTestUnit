@@ -1,12 +1,12 @@
 # Spinnaker automation test for azure based on citest
 
-## Dependence
+## Dependences
  * [citest](https://github.com/google/citest/)
  * [azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli)
  * [azure storage SDK for python](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python)
 
 ## Setup
-0. Setup Local Git [Spinnaker](https://www.spinnaker.io/setup/) and prepare a Virtual Network with at least 2 Subnet in Azure.
+0. Setup Local Git [Spinnaker](https://www.spinnaker.io/setup/) and prepare a Virtual Network with at least 2 Subnet and a storage account to storage log files in Azure.
 1. Install [citest](https://github.com/google/citest/), [azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli) and [azure storage SDK for python](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python). Recommend using [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) to manage the python packages. 
     
     Here we need to do some modification to avoid errers in citest module, please refer to Modifications setion below.
