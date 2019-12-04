@@ -1,4 +1,4 @@
-# Spinnaker test unit for azure based on citest
+# Spinnaker automation test for azure based on citest
 
 ## Dependence
  * [citest](https://github.com/google/citest/)
