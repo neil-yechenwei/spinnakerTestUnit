@@ -8,7 +8,7 @@
 
 ## Setup
 
-0. Setup Local Git [Spinnaker](https://www.spinnaker.io/setup/) and prepare a Virtual Network with at least 2 Subnet and a storage account to storage log files in Azure.
+0. Setup Local Git [Spinnaker](https://www.spinnaker.io/setup/) and prepare a Virtual Network with at least 2 Subnet and a Storage Account to storage log files in Azure. Note: Storage Account are different from the Spinnaker used.
 
 1. Install [citest](https://github.com/google/citest/), [azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli) and [azure storage SDK for python](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python). Recommend using [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) to manage the python packages. 
     
