@@ -4,17 +4,17 @@
     "NATIVE_PLATFORM": "native",
     "NATIVE_HOSTNAME": "localhost",
     "NATIVE_PORT": 8084,
-    "TEST_AZURE_RG_LOCATION": "LOCATION",
-    "TEST_AZURE_RESOURCE_GROUP": "RESOURCE_GROUP_NAME",
-    "TEST_AZURE_SUBSCRIPTION_ID": "SUBSCRIPTION_ID",
+    "TEST_AZURE_RG_LOCATION": "<insert your target region>",
+    "TEST_AZURE_RESOURCE_GROUP": "<insert your resource group name>",
+    "TEST_AZURE_SUBSCRIPTION_ID": "<insert your subscription id>",
     "TEST_AZURE_SUBNETS": [{
-        "ADDRESS": "SUBNET_ID",
-        "NAME": "SUBNET_NAME"
+        "ADDRESS": "<insert your subnet address, like ***.**.*.0//24>",
+        "NAME": "<insert your subnet name>"
     }, {
-        "ADDRESS": "SUBNET_ID",
-        "NAME": "SUBNET_NAME"
+        "ADDRESS": "<insert your subnet address, like ***.**.*.0//24>",
+        "NAME": "<insert your subnet name>"
     }],
-    "TEST_AZURE_VNET": "VIRTUAL_NET_NAME",
+    "TEST_AZURE_VNET": "<insert your virtual network name>",
     "TEST_AZURE_OSTYPE": "linux",
     "TEST_AZURE_BASEOS": "ubuntu-1604",
     "TEST_AZURE_SKU": {
