@@ -4,8 +4,8 @@ from time import gmtime, strftime
 from collections import OrderedDict
 import re
 
-name = "$STORAGE_NAME"
-key = "$STORAGE_KEY"
+name = "<insert your storage account name>"
+key = "<insert your storage account key>"
 
 local_path = os.path.expanduser("~/software/spinnakerTestUnit")
 
