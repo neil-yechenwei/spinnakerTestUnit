@@ -3,9 +3,7 @@
 ## Dependences
 
  * [citest](https://github.com/google/citest/)
- 
  * [azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli)
- 
  * [azure storage SDK for python](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python)
 
 ## Setup
@@ -54,6 +52,9 @@
  
  ## Trouble Shooting 
  
-* For any failed test case, check the whole process or simply check the error message in your storage account as `uploadLog.py` upload it. 
+* For any failed test case, check the whole process or simply check the error message in your storage account as `uploadLog.py` upload it. Three kinds of files may be uploaded:
+    1. *-abstract.log is the content of the email, only containing the status(passed or failed) and duration of each test case.
+    2. *.log shows every stage of each test case, and provide a brief error message once a test case failed.
+    3. *.html records the whole process for each test case, uploaded only when a test case failed.
 
 * Any error occurs while uploading logs or sending emails will be dump into `daily-running.err` located in your home directory as `task.sh` do so.
