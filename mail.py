@@ -2,10 +2,10 @@ import smtplib, ssl, os
 
 smtp_server = "smtp.office365.com"
 port = 587  # For starttls
-sender_email = "SENDER"
-receiver_email = "RECEIVER"
+sender_email = "<insert your sender email>"
+receiver_email = "<insert your receiver email>"
 
-password = "PASSWORD"
+password = "<insert your sender email password>"
 
 # Create a secure SSL context
 ctx = ssl.SSLContext(ssl.PROTOCOL_SSLv23)
