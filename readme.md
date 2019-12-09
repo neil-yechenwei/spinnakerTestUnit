@@ -4,11 +4,11 @@
 
  * [citest](https://github.com/google/citest/)
  * [azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli)
- * [azure storage SDK for python](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python)
+ * [azure SDK for python](https://docs.microsoft.com/en-us/azure/python/python-sdk-azure-install)
 
 ## Setup
 
-0. Setup Local Git [Spinnaker](https://www.spinnaker.io/setup/) and packer, also prepare a Virtual Network with at least 2 Subnet and a Storage Account to storage log files in Azure. Note: Storage Account is different from the Spinnaker used.
+0. Setup Local Git [Spinnaker](https://www.spinnaker.io/setup/) and packer, also prepare a Virtual Network with at least 2 Subnet and a Storage Account with a container named `spinnakertestinglogs` to storage log files in Azure. Note: Storage Account is different from the Spinnaker used.
 
 1.  Recommend using [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) to manage the python packages, download the Miniconda Linux 64-bit for python3.7 and create your new environment.
 ```
@@ -16,12 +16,12 @@ conda create -n spin python
 conda activate spin
 ```
 
-Then install [citest](https://github.com/google/citest/), [azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli) and [azure storage SDK for python](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python).
+Then install [citest](https://github.com/google/citest/), [azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli) and [azure SDK for python](https://docs.microsoft.com/en-us/azure/python/python-sdk-azure-install).
 ```
 git clone https://github.com/google/citest.git
 cd citest
 pip install -r requirements.txt
-pip install azure-storage-blob
+pip install azure
 ```
     
     Here we need to do some modification to avoid errers in citest module, please refer to Modifications setion below.
