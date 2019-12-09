@@ -13,18 +13,18 @@
 1. Install [azure cli](https://docs.microsoft.com/cli/azure/install-azure-cli).
 
 2.  Recommend using [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) to manage the python packages, download the Miniconda Linux 64-bit for python3.7 and create your new environment.
-```
-conda create -n spin python
-conda activate spin
-```
+    ```
+    conda create -n spin python
+    conda activate spin
+    ```
 
-Then install [citest](https://github.com/google/citest/) and [azure SDK for python](https://docs.microsoft.com/en-us/azure/python/python-sdk-azure-install).
-```
-git clone https://github.com/google/citest.git
-cd citest
-pip install -r requirements.txt
-pip install azure
-```
+    Then install [citest](https://github.com/google/citest/) and [azure SDK for python](https://docs.microsoft.com/en-us/azure/python/python-sdk-azure-install).
+    ```
+    git clone https://github.com/google/citest.git
+    cd citest
+    pip install -r requirements.txt
+    pip install azure
+    ```
     
     Here we need to do some modification to avoid errers in citest module, please refer to Modifications setion below.
 
