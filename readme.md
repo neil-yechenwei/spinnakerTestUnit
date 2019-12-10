@@ -14,7 +14,7 @@
 
 2.  Recommend using [Miniconda3](https://docs.conda.io/en/latest/miniconda.html) to manage the python packages, download the Miniconda Linux 64-bit for python3.7 and create your new environment.
     ```
-    conda create -n spin python
+    conda create -n spin python=3.7
     conda activate spin
     ```
 
