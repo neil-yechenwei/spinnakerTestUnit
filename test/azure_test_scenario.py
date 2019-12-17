@@ -317,7 +317,7 @@ class AzureTestScenario(sk.SpinnakerTestScenario):
             self.new_post_operation(
                 title="create_application_gateway", data=payload,
                 path=('applications/{app}/tasks').format(app=self.TEST_APP),
-                max_wait_secs=2400),
+                max_wait_secs=3600),
             contract=builder.build())
     
     def delete_load_balancer(self):
