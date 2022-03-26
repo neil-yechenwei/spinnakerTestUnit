@@ -20,7 +20,7 @@ htmls = OrderedDict()
 htmls["BakeAndDeployAPPGW"] = os.path.join(local_path, "azure_bake_and_deploy_ag.html")
 htmls["BakeAndRBDeployAPPGW"] = os.path.join(local_path, "azure_bake_and_RB_deploy_ag.html")
 htmls["BakeAndDeployLB"] = os.path.join(local_path, "azure_bake_and_deploy_lb.html")
-htmls["BakeAndRBDeployLB"] = os.path.join(local_path, "azure_bake_and_RB_deploy_ag.html")
+htmls["BakeAndRBDeployLB"] = os.path.join(local_path, "azure_bake_and_RB_deploy_lb.html")
 
 local_file = os.path.join(local_path, "tests.log")
 local_abstract = os.path.join(local_path, "abstract.log")
