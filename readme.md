@@ -42,6 +42,7 @@
     * mail.py
     * uploadLog.py
     * task.sh
+    * azlogin.sh
     
 5. Edit crontab schedule with below command and add your schedule to the bottom.
     ```
@@ -51,7 +52,7 @@
     ```
     # spinnaker daily test
     0 10 * * * /usr/local/bin/hal deploy apply > /dev/null 2>&1
-    10 10 * * * bash -c 'source ~/miniconda3/bin/activate spin && cd ~/software/spinnakerTestUnit/ && bash task.sh'
+    10 10 * * * bash -c 'source ~/miniconda3/bin/activate spin && cd ~/software/spinnakerTestUnit/ && bash azlogin.sh && bash task.sh'
     0 0 * * 7 rm -rf ~/.gradle/daemon/*
     ```
 6. Wait until the test ends and check your email box.

@@ -1,0 +1,1 @@
+az login --service-principal --username <sp_client_id> --password <sp_pwd> --tenant <tenantId>
